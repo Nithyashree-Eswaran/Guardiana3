@@ -26,6 +26,21 @@ def sign():
 @app.route('/plant')
 def type():
     return render_template('plant.html')
+@app.route('/herb')
+def plant():
+    return render_template('herb.html')
+
+@app.route('/shrub')
+def plant2():
+    return render_template('shrub.html')
+
+@app.route('/tree')
+def plant3():
+    return render_template('tree.html')
+
+@app.route('/climber')
+def plant4():
+    return render_template('climber.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
